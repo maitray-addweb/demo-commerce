@@ -1,0 +1,16 @@
+name: Nivo Slider
+type: module
+description: Provides a user interface for building a rotating banner powered by the Nivo Slider jQuery plugin.
+#core : 8.x
+package: Nivo Slider
+dependencies: 
+  - block
+  - file
+  - image
+  - libraries
+
+configure: admin/structure/nivo-slider
+version: "8.x-1.4"
+core: "8.x"
+project: "nivo_slider"
+datestamp: "1362602973"
