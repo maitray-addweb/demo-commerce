@@ -1,0 +1,53 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * All fonts used in SCSS are defined in this file.
+ */
+
+
+/* OpenSans fonts */
+@font-face {
+  font-family: $opensans-extrabold;
+  src: $url-opensans-extrabold;
+}
+@font-face {
+  font-family: $opensans-bold;
+  src: $url-opensans-bold;
+}
+@font-face {
+  font-family: $opensans-semibold;
+  src: $url-opensans-semibold;
+}
+@font-face {
+  font-family: $opensans-bolditalic;
+  src: $url-opensans-bolditalic;
+}
+@font-face {
+  font-family: $opensans-italic;
+  src: $url-opensans-italic;
+}
+@font-face {
+  font-family: $opensans-regular;
+  src: $url-opensans-regular;
+}
+@font-face {
+  font-family: $opensans-light;
+  src: $url-opensans-light;
+}
+@font-face {
+  font-family: $sensserif-regular;
+  src: $url-sensserif-regular;
+}
+@font-face {
+  font-family: $sensserif-bold;
+  src: $url-sensserif-bold;
+}
+@font-face {
+  font-family: $sensserif-semibold;
+  src: $url-sensserif-semibold;
+}
+@font-face {
+  font-family: $sensserif-italic;
+  src: $url-sensserif-italic;
+}

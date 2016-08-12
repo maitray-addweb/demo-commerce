@@ -64,7 +64,7 @@
 {# Top Header #}
         {% if page.top_header %}
           {% block top_header %}
-            <div class="top-header">
+            <div class="container top-header">
               <div class="top-header-content">
                 {{ page.top_header }}
               </div>
@@ -83,7 +83,8 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header class="header" id="navbar" role="banner">
+    <div {{ navbar_attributes.addClass(navbar_classes) }}>
       <div class="navbar-header">
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -103,6 +104,7 @@
           {{ page.navigation_collapsible }}
         </div>
       {% endif %}
+      </div>
     </header>
   {% endblock %}
 {% endif %}

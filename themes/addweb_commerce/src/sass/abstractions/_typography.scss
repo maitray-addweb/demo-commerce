@@ -1,0 +1,44 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Design of Typography.
+ */
+
+
+/**
+ * Adding margin, padding & width classes.
+ * Ex. margin-top--10px, padding-all--50per, width--100per
+ */
+@for $size from 0 through 100 {
+  @each $unit, $ut in $unit-map {
+    @each $position, $pos in $position-map {
+      .margin-#{$position}--#{$size}#{$unit} { margin-#{$position}: #{$size}#{$ut}; }
+      .padding-#{$position}--#{$size}#{$unit} { padding-#{$position}: #{$size}#{$ut}; }
+    }
+
+    .margin-all--#{$size}#{$unit} { margin: #{$size}#{$ut}; }
+    .margin-vertical--#{$size}#{$unit} {
+      margin-top: #{$size}#{$ut};
+      margin-bottom: #{$size}#{$ut};
+    }
+    .margin-horizontal--#{$size}#{$unit} {
+      margin-right: #{$size}#{$ut};
+      margin-left: #{$size}#{$ut};
+    }
+
+    .padding-all--#{$size}#{$unit} { margin: #{$size}#{$ut}; }
+    .padding-vertical--#{$size}#{$unit} {
+      padding-top: #{$size}#{$ut};
+      padding-bottom: #{$size}#{$ut};
+    }
+    .padding-horizontal--#{$size}#{$unit} {
+      padding-right: #{$size}#{$ut};
+      padding-left: #{$size}#{$ut};
+    }
+
+    .width--#{$size}#{$unit} {
+      width: #{$size}#{$ut} !important;
+    }
+  }
+}
