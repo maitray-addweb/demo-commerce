@@ -29,7 +29,7 @@
 /**
  * Header SCSS.
  */
-.header {
+.header{
   background-color: $black-41;
   border-bottom: 5px solid $white;
   .navbar {
@@ -39,29 +39,51 @@
     a {
       color: $white;
     }
-    .search-block-form {
+    .navbar-header {
       display: inline-block;
-      .input-group {
-        .form-search {
-          float: right;
-          height: 40px;
-          width: 293px;
-          &:focus {
-            box-shadow: none;
-          }
-        }
-        .input-group-btn {
-          .btn-primary {
-            padding: 10px 10px 4px 10px;
-            right: 37px;
-            font-size: 17px;
-            background: transparent;
-            color: $black;
-            border: none;
+      width: 100%;
+    }
+    .region-navigation-collapsible {
+      display: inline-block;
+      width: 100%;
+      .search-block-form {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+      }
+      form {
+        display: inline-block;
+        width: 100%;
+        .form-item {
+          display: inline-block;
+          .input-group {
+            float: right;
+            .form-search {
+              display: inline-block;
+              float: right;
+              height: 40px;
+              width: 293px;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .input-group-btn {
+              .btn-primary {
+                padding: 10px 10px 4px 10px;
+                right: 37px;
+                font-size: 17px;
+                background: transparent;
+                color: $black;
+                border: none;
+              }
+            }
           }
         }
       }
     }
+  }
+}
+/*.header {
     nav {
       display: inline-block;
       &:last-child {
@@ -69,17 +91,12 @@
       }
     }
   }
-}
+}*/
 /* End */
 
 
 
-
-
-
-/**
- * Extra SCSS.
- */
+/*
 .header-contact {
   display: inline-block;
   width: 100%;
@@ -125,12 +142,8 @@
     }
   }
 }
-/* End */
 
 
-/**
- * Header SCSS.
- */
 .header {
   background-color: $black-41;
   color: $grey-ea;
@@ -246,12 +259,8 @@
     }
   }
 }
-/* End */
 
 
-/**
- * Top-Header SCSS.
- */
 .header-slider {
   margin-top: 4px;
   .carousel-indicators {
@@ -296,12 +305,8 @@
     margin-top: 200px;
   }
 }
-/* End */
 
 
-/**
- * Product-Services SCSS.
- */
 .product-services {
   position: relative;
   padding: 30px;
@@ -327,15 +332,11 @@
     color: $grey-89;
   }
 }
-/* End */
 
 
-/**
- * Product-Detail SCSS.
- */
  .content-area {
   display: inline-block;
   width: 100%;
   margin-bottom: 60px;
  }
-/* End */
+*/

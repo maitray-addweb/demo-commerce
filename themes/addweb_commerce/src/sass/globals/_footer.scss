@@ -75,7 +75,6 @@
       }
       @media (max-width: 480px) {
         width: 100%;
-        text-align: center;
       }
     }
   }
@@ -85,20 +84,26 @@
     margin-top: 0;
     #block-footercopyright {
       display: inline-block;
-      margin: 8px 0 16px;
+      margin: 8px 0 0;
+      @media (max-width: 992px) {
+        display: block;
+        margin: 4px 0 0;
+      }
     }
     #block-footerpayments {
       display: inline-block;
       float: right;
-      margin: 8px 0 16px;
+      margin: 8px 0 0;
+      @media (max-width: 992px) {
+        display: block;
+        margin: 6px 0 8px;
+      }
     }
   }
 }
 
 
-/**
- * Extra SCSS.
- */
+/*
 .footer-top {
   display: inline-block;
   width: 100%;
@@ -212,3 +217,4 @@
   height: 40px;
   background-color: $black; 
 }
+*/
