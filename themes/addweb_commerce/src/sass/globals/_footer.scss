@@ -6,7 +6,98 @@
  */
 
 /**
- * Top-Footer SCSS.
+ * Footer SCSS.
+ */
+.footer {
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-top: none;
+  .region-top-footer {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 30px;
+    border-top: 1px solid $grey-8d;
+    border-bottom: 1px solid $grey-8d;
+    nav {
+      display: inline-block;
+      float: left;
+      width: 20%;
+      @media (max-width: 992px) {
+        width: 50%;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+        display: block;
+        clear: left;
+      }
+      h2 {
+        margin-bottom: 17px;
+        font-size: 18px;
+        font-family: $sensserif-bold;
+      }
+      ul {
+        text-align: left;
+        list-style: none;
+        li {
+          a {
+            padding: 1px 0 3px;
+            color: #000;
+            font-size: 15px;
+            font-family: $sensserif-italic;
+            line-height: 1.5;
+            text-decoration: none;
+            background-color: none;
+            &:hover {
+              background: none;
+              color: $grey-8d;
+            }
+          }
+        }
+      }
+    }
+    #block-questions {
+      @media (max-width: 992px) {
+        clear: left;
+      }
+    }
+    .block-block-content {
+      display: inline-block;
+      width: 20%;
+      @media (max-width: 992px) {
+        display: block;
+        clear: left;
+        width: 50%;
+      }
+      h3 {
+        margin-bottom: 17px;
+        font-size: 18px;
+        font-family: $sensserif-bold;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+.bottom-footer {
+  .footer {
+    margin-top: 0;
+    #block-footercopyright {
+      display: inline-block;
+      margin: 8px 0 16px;
+    }
+    #block-footerpayments {
+      display: inline-block;
+      float: right;
+      margin: 8px 0 16px;
+    }
+  }
+}
+
+
+/**
+ * Extra SCSS.
  */
 .footer-top {
   display: inline-block;

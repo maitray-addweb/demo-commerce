@@ -211,8 +211,10 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <footer class="bottom-footer" role="contentinfo">
+      <div class="footer {{ container }}">
       {{ page.footer }}
+      </div>
     </footer>
   {% endblock %}
 {% endif %}
