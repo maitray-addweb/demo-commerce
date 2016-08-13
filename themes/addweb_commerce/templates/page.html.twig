@@ -135,6 +135,16 @@
           </div>
         {% endblock %}
       {% endif %}
+      
+      {# Top Content #}
+      {% if page.top_content %}
+        {% block top_content %}
+          <div class="">
+            {{ page.top_content }}
+          </div>
+        {% endblock %}
+      {% endif %}
+      
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
