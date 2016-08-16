@@ -29,7 +29,56 @@
 /**
  * Header SCSS.
  */
-.header{
+.header {
+  background-color: $black-41;
+  .navbar {
+    margin-bottom: 0;
+    background-color: $black-41;
+    color: $white;
+    border: none;
+    .region-left-navigation {
+      display: inline-block;
+      margin-top: 4px;
+    }
+    .region-navigation {
+      display: inline-block;
+      float: right;
+      margin-top: 34px;
+      .search-block-form {
+        display: inline-block;
+        form {
+          display: inline-block;
+          .form-item {
+            display: inline-block;
+            .input-group {
+              float: right;
+              .form-search {
+                display: inline-block;
+                float: right;
+                height: 40px;
+                width: 293px;
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+              .input-group-btn {
+                .btn-primary {
+                  padding: 10px 10px 4px 10px;
+                  right: 37px;
+                  font-size: 17px;
+                  background: transparent;
+                  color: $black;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*.header{
   background-color: $black-41;
   .navbar {
     margin-bottom: 0;
@@ -82,7 +131,7 @@
       }
     }
   }
-}
+}*/
 .menubar {
   background: $black;
   margin-bottom: 5px;

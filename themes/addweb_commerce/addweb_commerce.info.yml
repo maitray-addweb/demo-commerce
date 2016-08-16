@@ -8,6 +8,7 @@ package: 'Custom'
 
 regions:
   top_header: 'Top Header'
+  left_navigation : 'Left Navigation'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   slider: 'Slide Show'

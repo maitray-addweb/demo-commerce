@@ -75,6 +75,7 @@
 
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
+
   {% block navbar %}
     {%
       set navbar_classes = [
@@ -86,6 +87,7 @@
     <header class="header" id="navbar" role="banner">
     <div class="container">
     <div class="navbar navbar-default">
+      {{ page.left_navigation }}
       <div class="navbar-header">
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -115,8 +117,6 @@
         </div>
       </div>
       {% endif %}
-      
-
 
     {# Slider #}
       {% if page.slider %}
@@ -126,6 +126,7 @@
           </div>
         {% endblock %}
       {% endif %}
+  }
 
 
 {# Main #}
