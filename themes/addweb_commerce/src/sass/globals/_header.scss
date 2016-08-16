@@ -31,8 +31,8 @@
  */
 .header{
   background-color: $black-41;
-  border-bottom: 5px solid $white;
   .navbar {
+    margin-bottom: 0;
     background-color: $black-41;
     color: $white;
     border: none;
@@ -83,151 +83,19 @@
     }
   }
 }
-/*.header {
+.menubar {
+  background: $black;
+  margin-bottom: 5px;
+  .navbar-collapse {
+    padding-left: 0;
     nav {
-      display: inline-block;
-      &:last-child {
-        float: right;
-      }
-    }
-  }
-}*/
-/* End */
-
-
-
-/*
-.header-contact {
-  display: inline-block;
-  width: 100%;
-  color: $grey-89;
-  .header-contact-number {
-    display: inline-block;
-    .header-icon {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 20px;
-    }
-    .number {
-      display: inline-block;
-      margin-top: 12px;
-      a {
-        display: inline-block;
-        color: $grey-89;
-        margin-top: -1px;
-        text-decoration: none;
-        &:hover {
-          color: $black;
-        }
-      }
-    }
-  }
-  .header-social-links {
-    a {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 3px;
-      text-decoration: none;
-      color: $grey-89;
-      &:hover {
-        color: $black;
-      }
-    }
-    h5 {
-      display: inline-block;
-      margin-top: 12px;
-    }
-    .header-social-links-icon {
-      font-size: 15px;
-    }
-  }
-}
-
-
-.header {
-  background-color: $black-41;
-  color: $grey-ea;
-  .header-left {
-    display: inline-block;
-    margin-top: 4px;
-    margin-bottom: 18px;
-    letter-spacing: 3px;
-    h1 {
-      font-size: 56px;
-      margin-bottom: 0;
-    }
-    span {
-      color: #ECFB00;
-      font-weight: 700;
-    }
-  }
-  .header-right {
-    float: right;
-    display: inline-block;
-    margin-top: 34px;
-    .search {
-      display: inline-block;
-      .search-field {
-        height: 38px;
-        width: 293px;
-        @media (max-width: 1199px) {
-          width: 250px;
-        }
-      }
-      .custom-search-btn {
-        position: relative;
-        left: -44px;
-        padding: 6px 0 0;
-        border: none;
-        background: transparent;
-        font-size: 19px;
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-    .account {
-      display: inline-block;
-      .account-icon {
-        display: inline-block;
-        padding: 17px 5px 0 0;
-        font-size: 23px;
-      }
-      h4 {
-        display: inline-block;
-        margin-top: 19px;
-        font-size: 19px;
-      }
-    }
-    .cart {
-      display: inline-block;
-      .cart-icon {
-        display: inline-block;
-        padding: 17px 5px 0 22px;
-        font-size: 23px;
-      }
-      h4 {
-        display: inline-block;
-        margin-top: 19px;
-        font-size: 19px;
-      }
-      .cart-count {
-        margin: 10px;
-        padding: 10px 12px 8px;
-        border: 1px solid rgba(255, 255, 255, .4);
-        @include border-radius(4px);
-      }
-    }
-  }
-  .menubar {
-    background-color: $black;
-    .navbar {
-      border: none;
-      margin-bottom: 0;
       .navbar-nav {
         > li {
           a {
             color: $white;
+            font-size: 16px;
+            font-family: $sensserif-bold;
+            text-transform: uppercase;
             &:hover,
             &:focus,
             &:active {
@@ -238,6 +106,9 @@
           &:first-child {
             a {
               padding-left: 0;
+              @media (max-width: 767px) {
+                padding-left: 15px;
+              }
             }
           }
           &.open {
@@ -252,91 +123,6 @@
           }
         }
       }
-      .menu {
-        background-color: $black;
-        padding: 0;
-      }
     }
   }
 }
-
-
-.header-slider {
-  margin-top: 4px;
-  .carousel-indicators {
-    bottom: 100px;
-  }
-  .item {
-    img {
-      width: 100%;
-    }
-    .carousel-caption {
-      bottom: 160px;
-      .slider-content {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        .slider-title {
-          font-size: 96px;
-          margin-bottom: 0;
-          font-weight: bold;
-        }
-        .slider-detail {
-          margin-top: 0;
-          margin-bottom: 30px;
-          font-size: 30px;
-        }
-      }
-      .slider-form {
-        a {
-          display: inline-block;
-          padding: 11px 16px;
-          color: $black;
-          font-size: 15px;
-          background-color: $white;
-          border: 1px solid $white;
-          text-decoration: none;
-          text-shadow: none;
-        }
-      }
-    }
-  }
-  .carousel-control {
-    margin-top: 200px;
-  }
-}
-
-
-.product-services {
-  position: relative;
-  padding: 30px;
-  margin-top: -70px;
-  background-color: $white;
-  border: 1px solid $grey-ea;
-  .return-product,
-  .free-shipping,
-  .secure-payment {
-    border-right: 1px solid $grey-ea;
-    &.new-product {
-      border-right: none;
-    }
-  }
-  .grid-title {
-    margin-top: 18px;
-    margin-bottom: 6px;
-    font-size: 19px;
-    font-family: $sensserif-semibold;
-  }
-  .grid-detail {
-    font-size: 14px;
-    color: $grey-89;
-  }
-}
-
-
- .content-area {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 60px;
- }
-*/

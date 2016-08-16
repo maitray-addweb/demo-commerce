@@ -84,6 +84,7 @@
       ]
     %}
     <header class="header" id="navbar" role="banner">
+    <div class="container">
     <div {{ navbar_attributes.addClass(navbar_classes) }}>
       <div class="navbar-header">
         {{ page.navigation }}
@@ -98,16 +99,21 @@
         {% endif %}
       </div>
     
-  {% endblock %}
-{% endif %}
-</div>
+    {% endblock %}
+    {% endif %}
+    </div>
+    </div>
     </header>
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
-        <div class="navbar-collapse collapse">
-          {{ page.navigation_collapsible }}
+      <div class="menubar">
+        <div class="container">
+          <div class="navbar-collapse collapse">
+            {{ page.navigation_collapsible }}
+          </div>
         </div>
+      </div>
       {% endif %}
       
 
@@ -139,7 +145,7 @@
       {# Top Content #}
       {% if page.top_content %}
         {% block top_content %}
-          <div class="">
+          <div class="container">
             {{ page.top_content }}
           </div>
         {% endblock %}
