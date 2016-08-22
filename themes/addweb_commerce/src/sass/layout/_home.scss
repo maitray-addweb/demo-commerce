@@ -17,12 +17,27 @@
       padding: 30px 0;
       border: 1px solid $grey-ea;
       text-align: center;
+      @media (max-width: 991px) {
+        padding-bottom: 0;
+      }
       .views-row {
         display: inline-block;
         float: left;
         width: 25%;
         border-right: 1px solid $grey-ea;
         &:last-child {
+          border-right: none;
+        }
+        @media (max-width: 991px) {
+          width: 50%;
+          margin-bottom: 40px;
+          &:nth-child(2n) {
+            border-right: none;
+          }
+        }
+        @media (max-width: 480px) {
+          width: 100%;
+          margin-bottom: 40px;
           border-right: none;
         }
         img {
@@ -58,10 +73,19 @@
       padding-right: 15px;
       padding-left: 15px;
       width: 33.33333333%;
+      @media (max-width: 767px) {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+      }
       img {
         max-width: 360px;
         width: 100%;
         max-height: 170px;
+        @media (max-width: 767px) {
+          max-width: 100%;
+        }
       }
       .field-content {
         h3 {
