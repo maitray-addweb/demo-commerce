@@ -1,0 +1,4 @@
+name: State Machine Test
+type: module
+core: 8.x
+hidden: true
