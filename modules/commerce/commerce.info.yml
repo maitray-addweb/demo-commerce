@@ -1,0 +1,12 @@
+name: Commerce
+type: module
+description: 'Defines common functionality for all Commerce modules.'
+package: Commerce
+core: 8.x
+configure: commerce.admin_commerce
+dependencies:
+  - address
+  - entity:entity
+  - inline_entity_form
+  - views
+  - system (>=8.1.0)

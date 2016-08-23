@@ -1,0 +1,15 @@
+name: Commerce Cart
+type: module
+description: 'Implements the shopping cart system and add to cart features.'
+package: Commerce
+core: 8.x
+dependencies:
+  - commerce
+  - commerce_order
+  - commerce_product
+  - views
+config_devel:
+  install:
+    - core.entity_form_mode.commerce_line_item.add_to_cart
+    - views.view.commerce_cart_form
+    - views.view.commerce_carts
